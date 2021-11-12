@@ -3,6 +3,7 @@ const app=express();
 const path=require('path');
 
 app.listen(3030 || process.env.PORT, ()=> {console.log("Servidor corriendo en puerto "+process.env.PORT)})
+
 app.use(express.static('public')); //permite vincular o completar la ruta para que luego html busque los recursos publicos
 app.get("/",(req,res)=>{res.sendFile(path.join(__dirname,'/views/index.html'))})
 //otras formas de determinar la ruta:
