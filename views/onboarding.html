@@ -14,6 +14,8 @@
     
 
 <body>
+    <h1>Bienvenido al Registro de Usuario</h1>
+    <p>Ingresa los datos solicitados para crear tu usuario</p>
     <!-- formulario -->
    
     <form action="#" method="post" class="crear-form">
@@ -22,21 +24,18 @@
     y method: GET o POST define como se envian los datos al servidor
 POST tiene la info segura-->
         <div class="control-form">
-            <label>Nombre y Apellido</label>
-            <input type="text" name="nombreApellido" id="">
+            <input type="text" name="nombreApellido" id="" placeholder="Nombre y Apellido">
             <!-- input type (password, radio, email, checkbox, text) -->
         </div>
         <div class="control-form">
-            <label>Nombre de Usuario:</label>
-            <input type="text" name="userName" id="" placeholder="texto ayuda">
+            <input type="text" name="userName" id="" placeholder="Nombre de Usuario">
         </div>
         <div class="control-form">
-            <label>Fecha de nacimiento</label>
-            <input type="date" name="bday" id="">
+            <label for="'date">Fecha de nacimiento</label>
+            <input type="date" name="bday" id="date">
         </div>
         <div class="control-form">
-            <label>Domicilio</label>
-            <input type="text" name="address" id="">
+            <input type="text" name="address" id="" placeholder="Domicilio">
         </div>
         <div class="control-form">
         <!-- combobox para seleccionar una opcion -->
@@ -47,13 +46,15 @@ POST tiene la info segura-->
                 <!-- value es lo que relaciona con el backend -->
             </select>
         </div>
-        <div>
+        <div class="control-form">
             <label >Intereses</label>
-            <input type="checkbox" name="electro" id="">Electro;
-            <input type="checkbox" name="moda" id="">Moda;
-            <input type="checkbox" name="hogar" id="">Hogar;
-            <input type="checkbox" name="jugeteria" id="">Jugueteria;
-            <input type="checkbox" name="vidaSana" id="">Vida Sana;
+            <div class="check">
+                <input type="checkbox" name="electro" id="">Electro;
+                <input type="checkbox" name="moda" id="">Moda;
+                <input type="checkbox" name="hogar" id="">Hogar;
+                <input type="checkbox" name="jugeteria" id="">Jugueteria;
+                <input type="checkbox" name="vidaSana" id="">Vida Sana;
+            </div>
         </div>
         <div class="control-form">
             <label >Foto Usuario</label>
